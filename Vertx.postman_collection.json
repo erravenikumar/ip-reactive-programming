@@ -1,0 +1,156 @@
+{
+	"info": {
+		"_postman_id": "ae394333-94a3-4078-b0f7-8771816164e2",
+		"name": "Vertx",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "43596276",
+		"_collection_link": "https://amigoes.postman.co/workspace/Amigoes's-Workspace~16430bee-5c97-427a-8386-7b864940662d/collection/43596276-ae394333-94a3-4078-b0f7-8771816164e2?action=share&source=collection_link&creator=43596276"
+	},
+	"item": [
+		{
+			"name": "create",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{ \"id\":3,\n  \"name\": \"Alice\",\n  \"email\": \"alice@example.com\"\n}\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/users",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"users"
+					]
+				},
+				"description": "Generated from cURL: curl -X POST http://localhost:8888/api/users \\\n     -H \"Content-Type: application/json\" \\\n     -d '{\"name\":\"Alice\", \"email\":\"alice@example.com\"}'"
+			},
+			"response": []
+		},
+		{
+			"name": "all",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/users/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"users",
+						""
+					]
+				},
+				"description": "Generated from cURL: curl -X POST http://localhost:8888/api/users \\\n     -H \"Content-Type: application/json\" \\\n     -d '{\"name\":\"Alice\", \"email\":\"alice@example.com\"}'"
+			},
+			"response": []
+		},
+		{
+			"name": "get",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/users/5",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"users",
+						"5"
+					]
+				},
+				"description": "Generated from cURL: curl -X POST http://localhost:8888/api/users \\\n     -H \"Content-Type: application/json\" \\\n     -d '{\"name\":\"Alice\", \"email\":\"alice@example.com\"}'"
+			},
+			"response": []
+		},
+		{
+			"name": "delete",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/users/5",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"users",
+						"5"
+					]
+				},
+				"description": "Generated from cURL: curl -X POST http://localhost:8888/api/users \\\n     -H \"Content-Type: application/json\" \\\n     -d '{\"name\":\"Alice\", \"email\":\"alice@example.com\"}'"
+			},
+			"response": []
+		}
+	]
+}
